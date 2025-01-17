@@ -1,0 +1,23 @@
+{
+  "name": "ipl-social",
+  "version": "1.0.0",
+  "description": "A Node.js project for validating passwords with CI/CD pipeline.",
+  "homepage": "https://github.com/alexandre-topet-vinci/IPL-Social#readme",
+  "bugs": {
+    "url": "https://github.com/alexandre-topet-vinci/IPL-Social/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexandre-topet-vinci/IPL-Social.git"
+  },
+  "license": "ISC",
+  "author": "Topet Alexandre",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "jasmine spec/*.test.js"
+  },
+  "dependencies": {
+    "jasmine": "^5.5.0"
+  }
+}
