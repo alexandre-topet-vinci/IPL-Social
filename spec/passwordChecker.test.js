@@ -8,4 +8,12 @@ describe('Password Validation', () => {
 
       expect(result).toBe(false);
   });
+  it('should return true for passwords with 8 or more characters', () => {
+      const password = '1234567?';
+
+      const result = validatePassword(password);
+
+      expect(result).toBe(true);
+  });
+
 });

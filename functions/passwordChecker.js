@@ -1,5 +1,5 @@
 function validatePassword(password) {
-    return false;
+    return password.length >= 8;
 }
 
 export { validatePassword };
