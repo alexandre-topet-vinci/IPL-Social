@@ -1,6 +1,7 @@
 function validatePassword(password) {
     if (password.length < 8) return false;
-    return /[!@#$%^&*(),.?":{}|<>]/.test(password);
+    if (!/[!@#$%^&*(),.?":{}|<>]/.test(password)) return false;
+    return /\d/.test(password);
 }
 
 export { validatePassword };
