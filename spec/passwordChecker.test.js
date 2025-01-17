@@ -16,4 +16,13 @@ describe('Password Validation', () => {
       expect(result).toBe(true);
   });
 
+
+  it('should return true if the password contains at least one special character', () => {
+      const password = 'Password1!';
+
+      const result = validatePassword(password);
+      
+      expect(result).toBe(true);
+  });
+
 });
