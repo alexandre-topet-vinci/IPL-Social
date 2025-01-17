@@ -49,9 +49,21 @@ describe('Password Validation', () => {
       const password = 'Password1!'
 
       const result = validatePassword(password);
-      
+
       expect(result).toBe(true);
-});
+  });
+  it('should return false if the password contains "IPL" (uppercase)', () => {
+      const password = 'IPLpassword1!';
+    
+      const result = validatePassword(password);
 
+      expect(result).toBe(false);
+  });
+  it('should return false if the password contains "IPL" (lowercase insensitive)', () => {
+      const password = 'iplpassword1!';
+    
+     const result = validatePassword(password);
 
+     expect(result).toBe(false);
+  });
 });
