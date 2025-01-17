@@ -31,4 +31,12 @@ describe('Password Validation', () => {
 
       expect(result).toBe(false);
   });
+  it('should return true if the password contains at least one digit', () => {
+      const password = 'Password1!';
+
+      const result = validatePassword(password);
+
+      expect(result).toBe(true);
+  });
+
 });
