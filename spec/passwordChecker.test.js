@@ -39,11 +39,19 @@ describe('Password Validation', () => {
       expect(result).toBe(true);
   });
   it('should return true if the password contains at least one digit', () => {
-    const password = 'Password!';
+      const password = 'Password!';
 
-    const result = validatePassword(password);
+      const result = validatePassword(password);
 
-    expect(result).toBe(false);
+      expect(result).toBe(false);
+  });
+  it('should return true for valid passwords without "IPL"', () => {
+      const password = 'Password1!'
+
+      const result = validatePassword(password);
+      
+      expect(result).toBe(true);
 });
+
 
 });
